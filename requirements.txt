@@ -1,0 +1,12 @@
+crewai
+crewai_tools
+python-dotenv
+langchain-google-genai
+youtube-transcript-api
+spacy
+transformers
+torch
+nltk
+flask
+flask-wtf
+gunicorn
