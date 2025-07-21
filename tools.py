@@ -55,8 +55,17 @@ class TranscriptTool(BaseTool):
 # Load required models once
 import nltk
 from nltk.tokenize import sent_tokenize
+import spacy
+import subprocess
 
-nlp = spacy.load("en_core_web_sm")
+
+
+try:
+    nlp = spacy.load("en_core_web_sm")
+except OSError:
+    subprocess.run(["python", "-m", "spacy", "download", "en_core_web_sm"])
+    nlp = spacy.load("en_core_web_sm")
+
 summarizer = pipeline("summarization", model="facebook/bart-large-cnn")
 
 
