@@ -6,7 +6,10 @@ This project leverages CrewAI to build an Agentic AI pipeline that converts YouT
 
 ## Demo
 
-![Demo](images/yt_blog_1.gif)
+<!-- ![Demo](images/yt_blog_1.gif) -->
+<p align="center">
+  <img src="images/yt_blog_1.gif" alt="Demo" width="100%" />
+</p>
 
 
 ## Features
