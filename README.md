@@ -12,6 +12,12 @@ This project leverages CrewAI to build an Agentic AI pipeline that converts YouT
 </p>
 
 
+
+## Screenshot
+
+![Alt text](images/image1.png)
+![Alt text](images/image2.png)
+
 ## Features
 
 🔗 YouTube Integration: Automatically fetches transcripts from YouTube videos.
