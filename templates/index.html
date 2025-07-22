@@ -169,15 +169,16 @@
             transform: translateY(-1px);
             box-shadow: 0 8px 25px rgba(71, 85, 105, 0.15);
         }
-        /* Blog-optimized typography */
+        /* Enhanced Blog-optimized typography */
         .markdown-content {
             overflow-wrap: break-word;
             word-wrap: break-word;
-            word-break: normal; /* Changed from break-word to normal */
+            word-break: normal;
             line-height: 1.8;
             font-family: 'Inter', sans-serif;
-            hyphens: auto; /* Added for better word breaking */
+            hyphens: auto;
         }
+        
         .markdown-content h1, .markdown-content h2, .markdown-content h3 { 
             font-family: 'Playfair Display', serif;
             font-weight: 600;
@@ -186,6 +187,7 @@
             color: #1e293b;
             letter-spacing: -0.025em;
         }
+        
         .markdown-content h1 { 
             font-size: 2.2rem;
             color: #dc2626;
@@ -203,6 +205,7 @@
             border-bottom: none;
             font-family: 'Playfair Display', serif;
         }
+        
         .markdown-content h1::before {
             content: '';
             position: absolute;
@@ -215,6 +218,7 @@
             border: 2px solid rgba(220, 38, 38, 0.1);
             z-index: -1;
         }
+        
         .markdown-content h1::after {
             content: '';
             position: absolute;
@@ -226,44 +230,47 @@
             background: linear-gradient(90deg, transparent 0%, #dc2626 20%, #ef4444 50%, #dc2626 80%, transparent 100%);
             border-radius: 2px;
         }
-        /* Enhanced spacing after title */
-        /* .markdown-content h1 + p {
-            margin-top: 2rem;
-            font-size: 1.125rem;
-            color: #64748b;
-            font-style: italic;
-            text-align: center;
-            border-bottom: 1px solid #e2e8f0;
-            padding-bottom: 2rem;
-            margin-bottom: 2.5rem;
-        } */
+        
         .markdown-content h2 { 
             font-size: 2rem;
             color: #334155;
             border-left: 4px solid #dc2626;
             padding-left: 1rem;
+            margin-top: 3rem;
+            margin-bottom: 1.5rem;
         }
+        
         .markdown-content h3 { 
             font-size: 1.5rem;
             color: #475569;
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
         }
+        
         .markdown-content p { 
             margin-bottom: 1.5rem; 
             font-size: 1.125rem;
             color: #000000;
             font-weight: 400;
+            line-height: 1.7;
         }
+        
         .markdown-content ul { 
             list-style-type: none;
             margin-left: 0;
-            margin-bottom: 1.5rem;         
+            margin-bottom: 1.5rem;
+            padding-left: 0;
         }
+        
         .markdown-content li { 
             margin-bottom: 0.75rem;
             position: relative;
             padding-left: 2rem;
-            color: #475569;
+            color: #000000;
+            font-size: 1.125rem;
+            line-height: 1.7;
         }
+        
         .markdown-content li::before {
             content: "▶";
             color: #dc2626;
@@ -272,7 +279,25 @@
             left: 0.5rem;
             top: 0.1rem;
         }
-        /* Clean code block styling */
+        
+        .markdown-content ol {
+            margin-left: 0;
+            margin-bottom: 1.5rem;
+            padding-left: 2rem;
+        }
+        
+        .markdown-content ol li {
+            list-style-type: decimal;
+            color: #000000;
+            font-size: 1.125rem;
+            padding-left: 0.5rem;
+        }
+        
+        .markdown-content ol li::before {
+            display: none;
+        }
+        
+        /* Enhanced code block styling */
         .markdown-content pre {
             background: rgba(248, 250, 252, 0.9);
             color: #334155;
@@ -283,7 +308,9 @@
             overflow-x: auto;
             border: 2px solid #e2e8f0;
             font-family: 'JetBrains Mono', monospace;
+            margin: 1.5rem 0;
         }
+        
         .markdown-content code {
             font-family: 'JetBrains Mono', monospace;
             font-size: 0.875rem;
@@ -291,7 +318,67 @@
             background: #f1f5f9;
             padding: 0.2rem 0.4rem;
             border-radius: 4px;
+            color: #dc2626;
         }
+        
+        .markdown-content pre code {
+            background: transparent;
+            padding: 0;
+            color: #334155;
+        }
+        
+        /* Enhanced blockquote styling */
+        .markdown-content blockquote {
+            border-left: 4px solid #dc2626;
+            padding-left: 1.5rem;
+            margin: 2rem 0;
+            font-style: italic;
+            color: #475569;
+            background: rgba(220, 38, 38, 0.02);
+            padding: 1rem 1.5rem;
+            border-radius: 0 8px 8px 0;
+        }
+        
+        /* Enhanced link styling */
+        .markdown-content a {
+            color: #dc2626;
+            text-decoration: underline;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        
+        .markdown-content a:hover {
+            color: #b91c1c;
+        }
+        
+        /* Enhanced table styling */
+        .markdown-content table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2rem 0;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .markdown-content th,
+        .markdown-content td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        
+        .markdown-content th {
+            background: #f8fafc;
+            font-weight: 600;
+            color: #334155;
+        }
+        
+        .markdown-content tr:hover {
+            background: #f8fafc;
+        }
+        
         /* Subtle hover effects */
         .card-hover {
             transition: all 0.3s ease;

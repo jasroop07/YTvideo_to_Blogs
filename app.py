@@ -59,9 +59,6 @@ def home():
 
 
 # --- Run the Application ---
-import os
-
 if __name__ == "__main__":
-    #port = int(os.environ.get("PORT", 8080))  # Render provides PORT env variable
-    app.run(host="0.0.0.0",  debug=True)
-
+    # debug=True allows you to see errors and automatically reloads the server on changes.
+    app.run(debug=True)

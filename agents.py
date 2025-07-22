@@ -9,10 +9,17 @@ from crewai import LLM
 
 ## call the gemini models
 llm = LLM(
-    model="gemini/gemini-2.0-flash",
+    model="gemini/gemini-1.5-flash",
     api_key = os.getenv("GEMINI_API_KEY"),  # Your actual key
     temperature=0.7,
 )
+
+# llm = LLM(
+#     model="groq/llama3-70b-8192",
+#     api_key = os.getenv("GEMINI_API_KEY"),  # Your actual key
+#     temperature=0.7,
+# )
+
 
 # Creating a senior researcher agent with memory and verbose mode
 
