@@ -13,7 +13,7 @@ This project leverages CrewAI to build an Agentic AI pipeline that converts YouT
 
 
 
-## Screenshot
+## Screenshots
 
 ![Alt text](images/image1.png)
 ![Alt text](images/image2.png)
